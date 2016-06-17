@@ -18,10 +18,10 @@ class ImageCell: UICollectionViewCell {
 
 class CollectionViewController: UICollectionViewController {        // Our type's name is CollectionViewController
     
-    var photos: [UIImage] = []      // An array to hold our photos
+    var photos: [UIImage] = []      // An array to hold our photos. Var means we can change its contents.
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count + 1     // One cell for the "Add Photo" cell, and a cell for each photo
+        return photos.count + 1     // One special cell to add a new photo, and a cell for each photo
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

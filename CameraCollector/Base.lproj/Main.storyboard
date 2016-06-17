@@ -14,22 +14,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FMo-wR-bQw">
-                            <size key="itemSize" width="80" height="80"/>
+                            <size key="itemSize" width="120" height="120"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="AddPhotoCell" reuseIdentifier="AddPhotoCell" id="58F-2F-BMl" customClass="AddPhotoCell" customModule="CameraCollector">
-                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2an-Yp-bmg">
-                                            <rect key="frame" x="34.5" y="29.5" width="11" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="41" y="22.5" width="38.5" height="75.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="63"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -44,7 +44,6 @@
                                     <constraint firstItem="2an-Yp-bmg" firstAttribute="centerX" secondItem="58F-2F-BMl" secondAttribute="centerX" id="ChY-ZO-0yo"/>
                                     <constraint firstItem="2an-Yp-bmg" firstAttribute="centerY" secondItem="58F-2F-BMl" secondAttribute="centerY" id="GA6-AZ-tIA"/>
                                 </constraints>
-                                <size key="customSize" width="80" height="80"/>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
                                         <exclude reference="2an-Yp-bmg"/>
@@ -52,14 +51,14 @@
                                 </variation>
                             </collectionViewCell>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ImageCell" reuseIdentifier="ImageCell" id="Duz-HE-a6S" customClass="ImageCell" customModule="CameraCollector">
-                                <rect key="frame" x="104" y="0.0" width="80" height="80"/>
+                                <rect key="frame" x="160" y="0.0" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Rs-tE-Akw">
-                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -79,7 +78,6 @@
                                         <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                                     </constraint>
                                 </constraints>
-                                <size key="customSize" width="80" height="80"/>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
                                         <exclude reference="1Rs-tE-Akw"/>
