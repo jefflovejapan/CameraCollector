@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2281651D1458BD003B3AD0 /* PhotoDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2281641D1458BD003B3AD0 /* PhotoDisplayViewController.swift */; };
 		1F2E4D7D1D0B6ACF00585946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E4D7C1D0B6ACF00585946 /* AppDelegate.swift */; };
 		1F2E4D7F1D0B6ACF00585946 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E4D7E1D0B6ACF00585946 /* CollectionViewController.swift */; };
 		1F2E4D821D0B6ACF00585946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E4D801D0B6ACF00585946 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F2281641D1458BD003B3AD0 /* PhotoDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDisplayViewController.swift; sourceTree = "<group>"; };
 		1F2E4D791D0B6ACF00585946 /* CameraCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2E4D7C1D0B6ACF00585946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F2E4D7E1D0B6ACF00585946 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				1F2E4D7C1D0B6ACF00585946 /* AppDelegate.swift */,
 				1F2E4D7E1D0B6ACF00585946 /* CollectionViewController.swift */,
+				1F2281641D1458BD003B3AD0 /* PhotoDisplayViewController.swift */,
 				1F2E4D801D0B6ACF00585946 /* Main.storyboard */,
 				1F2E4D831D0B6ACF00585946 /* Assets.xcassets */,
 				1F2E4D851D0B6ACF00585946 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				1F2E4D7F1D0B6ACF00585946 /* CollectionViewController.swift in Sources */,
 				1F2E4D7D1D0B6ACF00585946 /* AppDelegate.swift in Sources */,
+				1F2281651D1458BD003B3AD0 /* PhotoDisplayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

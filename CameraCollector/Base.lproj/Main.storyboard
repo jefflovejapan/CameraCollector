@@ -3,8 +3,51 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Photo Display View Controller-->
+        <scene sceneID="uCG-0f-EUe">
+            <objects>
+                <viewController id="ceT-Ic-u5g" customClass="PhotoDisplayViewController" customModule="CameraCollector" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NKq-JA-e1P"/>
+                        <viewControllerLayoutGuide type="bottom" id="pKu-4O-3fU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XxM-cd-2rn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwq-Cx-Cig">
+                                <rect key="frame" x="28" y="28" width="30" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="ceT-Ic-u5g" eventType="touchUpInside" id="EuY-o8-kxS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M0g-td-d4l">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pKu-4O-3fU" firstAttribute="top" secondItem="M0g-td-d4l" secondAttribute="bottom" id="27m-SK-ewh"/>
+                            <constraint firstItem="Zwq-Cx-Cig" firstAttribute="leading" secondItem="XxM-cd-2rn" secondAttribute="leadingMargin" constant="8" id="AWH-hY-tV5"/>
+                            <constraint firstItem="Zwq-Cx-Cig" firstAttribute="top" secondItem="NKq-JA-e1P" secondAttribute="bottom" constant="8" id="Akv-Ec-HFb"/>
+                            <constraint firstAttribute="trailing" secondItem="M0g-td-d4l" secondAttribute="trailing" id="F7s-zc-CRX"/>
+                            <constraint firstItem="M0g-td-d4l" firstAttribute="top" secondItem="NKq-JA-e1P" secondAttribute="bottom" id="IoG-Cl-N74"/>
+                            <constraint firstItem="M0g-td-d4l" firstAttribute="leading" secondItem="XxM-cd-2rn" secondAttribute="leading" id="yCC-wY-Axb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="M0g-td-d4l" id="EQl-fh-xAe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idA-im-p0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1771" y="447"/>
+        </scene>
         <!--Collection View Controller-->
         <scene sceneID="S2X-aK-K7Z">
             <objects>
@@ -99,6 +142,9 @@
                             <outlet property="delegate" destination="cM3-c0-5ww" id="riN-Tj-4oJ"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <segue destination="ceT-Ic-u5g" kind="show" identifier="showPhoto" id="eHe-Ze-9hz"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JCg-mx-l2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
