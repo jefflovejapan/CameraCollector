@@ -16,23 +16,26 @@ class ImageCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
 }
 
-class CollectionViewController: UICollectionViewController {
-
-    var photos: [UIImage] = []
-
+class CollectionViewController: UICollectionViewController {        // Our type's name is CollectionViewController
+    
+    var photos: [UIImage] = []      // An array to hold our photos
+    
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return photos.count + 1
+        return photos.count + 1     // One cell for the "Add Photo" cell, and a cell for each photo
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         if indexPath.item == 0 {
-            let addPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("AddPhotoCell", forIndexPath: indexPath)
-            return addPhotoCell
-        } else {
-            if let imageCell = collectionView.dequeueReusableCellWithReuseIdentifier("ImageCell", forIndexPath: indexPath) as? ImageCell {
-                return imageCell
+            if let addPhotoCell = collectionView.dequeueReusableCellWithReuseIdentifier("AddPhotoCell", forIndexPath: indexPath) as? AddPhotoCell {     // Is the cell that you have for the "AddPhotoCell" identifer actually an AddPhotoCell?
+                return addPhotoCell               // Return it
             } else {
-                return UICollectionViewCell()
+                return UICollectionViewCell()     // Whatever
+            }
+        } else {
+            if let imageCell = collectionView.dequeueReusableCellWithReuseIdentifier("ImageCell", forIndexPath: indexPath) as? ImageCell {      // Is the cell that you have for the "ImageCell" identifier actually an ImageCell?
+                return imageCell                // Return it
+            } else {
+                return UICollectionViewCell()   // Whatever
             }
         }
     }
